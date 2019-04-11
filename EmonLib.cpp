@@ -117,7 +117,7 @@ void EnergyMonitor::calcVI(unsigned int crossings, unsigned int timeout)
     // A) Read in raw voltage and current samples
     //-----------------------------------------------------------------------------
     sampleV = (this->inputPinReader)(inPinV);                 //Read in raw voltage signal
-    sampleI = (this->inputPinReader)(inPinI);                 //Read in raw current signal
+    sampleI = (this->inputPinReader);                 //Read in raw current signal
 
     //-----------------------------------------------------------------------------
     // B) Apply digital low pass filters to extract the 2.5 V or 1.65 V dc offset,
